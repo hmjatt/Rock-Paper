@@ -16,4 +16,4 @@ Thanks to The Odin Project for putting awesome curriculum for people like me to 
 * MDN(Mozilla Developer Network)
 * GitHub an awesome code sharing platform
 
-> If you have read this far, you are a bright diamond :diamond_shape_with_a_dot_inside: keep on ? shining :D
+> If you have read this far, you are a bright diamond :diamond_shape_with_a_dot_inside: keep on shining :D
