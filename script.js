@@ -29,19 +29,19 @@ function playSingleRound() {
       console.log("Select again");
   } else if (playerSelection === "ROCK" && computerSelection === "PAPER") {
       console.log("You Lose!, Paper covered the Rock");
-      computerScore += 1; // run computerScored fxn
+      computerScore++;
   } else if (playerSelection === "ROCK" && computerSelection === "SCISSORS") {
       console.log("You Win!!!, Rock broke the Scissors");
-      playerScore++; // run playerScored fxn
+      playerScore++;
   } else if (playerSelection === "PAPER" && computerSelection === "ROCK") {
       console.log("You Win!!!, Paper covered Rock");
       playerScore++;
   } else if (playerSelection === "PAPER" && computerSelection === "SCISSORS") {
       console.log("You Lose!, Scissors cut the Paper");
-      computerScore += 1;
+      computerScore++;
   } else if (playerSelection === "SCISSORS" && computerSelection === "ROCK") {
       console.log("You Lose!, Rock broke the Scissors");
-      computerScore += 1;
+      computerScore++;
   } else if (playerSelection === "SCISSORS" && computerSelection === "PAPER") {
       console.log("You Win!!!, Scissors cut the Paper");
       playerScore++;
