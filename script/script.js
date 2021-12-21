@@ -10,14 +10,37 @@ let scissors_div = document.getElementById("scissors");
 let gameCount_div = document.getElementById("gamecount");
 
 function getComputerChoice() {
-  const CHOICES = ["ROCK", "PAPER", "SCISSORS"];
-  let computerChoice = CHOICES[Math.floor(Math.random() * CHOICES.length)];
-  return computerChoice;
+  const CHOICES = ["rock", "paper", "scissors"];
+  let randomChoice = CHOICES[Math.floor(Math.random() * CHOICES.length)];
+  return randomChoice;
 }
 
 function game(playerChoice) {
-  console.log("computer choice = " + getComputerChoice());
-  console.log("player choice = " + playerChoice);
+  let computerChoice = getComputerChoice();
+
+  console.log(playerChoice + "  |  " + computerChoice);
+  
+  switch (playerChoice + computerChoice) {
+    // Cases where player wins
+    case "rockscissors":
+    case "paperrock":
+    case "scissorspaper":
+      console.log("Player Wins!");
+      break;
+    // Cases where Computer wins
+    case "rockpaper":
+    case "paperscissors":
+    case "scissorsrock":
+      console.log("Computer Wins!");
+      break;
+    // Cases where its a Tie
+    case "rockrock":
+    case "paperpaper":
+    case  "scissorsscissors":
+      console.log("It's a Tie!!!");
+      break;
+  }
+  
 }
 
 function main() {
