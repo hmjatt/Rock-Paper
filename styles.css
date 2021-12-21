@@ -49,7 +49,7 @@ hr.solid {
     border-left: 2px solid rgb(248, 248, 248);
 }
 
-#result p, #game-count p {
+#result, #game-count-div p, #game-count-span {
     color: rgb(255, 241, 213);
     font-family: 'Azeret Mono', monospace;
     font-size: 23px;
@@ -76,4 +76,18 @@ hr.solid {
     cursor: pointer;
     transition: all, 0.3s ease-out;
 }
+
+#reset {
+    display: flex;
+    justify-content: center;
+}
+
+#reset button {
+    height: 70px;
+    width: 100px;
+    backdrop-filter: blur(100px);
+    border-radius: 15px;
+
+}
+
 
