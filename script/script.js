@@ -38,10 +38,10 @@ function winner() {
       msg = "Player Won this Game";
       break;
     case playerScore < computerScore:
-      msg = "computer Won this Game";
+      msg = "Computer Won this Game";
       break;
     case playerScore == computerScore:
-      msg = "This game is a tie"
+      msg = "This game is a Tie"
       break;
   }
 }
