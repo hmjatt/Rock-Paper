@@ -3,6 +3,7 @@ body {
     background-image: linear-gradient(rgb(61, 61, 61), rgb(10, 10, 10));
     height: 100vh;
     font-family: 'Major Mono Display', monospace;  
+    margin: 0%;
 }
 
 header {
@@ -62,15 +63,18 @@ hr.solid {
 }
 #choices{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+#rock, #paper, #scissors {
     padding: 5%;
-    height: 115px;
 }
 
 #rock img, #paper img, #scissors img {
     height: 100px;
     width: 100px;
     transition: all, 0.3s ease-out;
+    
 }
 
 #rock img:hover, #paper img:hover, #scissors img:hover {
