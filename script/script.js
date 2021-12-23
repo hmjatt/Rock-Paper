@@ -2,7 +2,6 @@ let playerScore = 0;
 let computerScore = 0;
 let playerScore_span = document.getElementById("player-score");
 let computerScore_span = document.getElementById("computer-score");
-let scoreBoard_div = document.getElementById("scoreboard");
 let result_div = document.getElementById("result");
 let rock_div = document.getElementById("rock");
 let paper_div = document.getElementById("paper");
