@@ -57,6 +57,9 @@ hr.solid {
     text-align: center;
 }
 
+#game-count-span {
+    padding: 0%;
+}
 #choices{
     display: flex;
     justify-content: space-evenly;

@@ -10,6 +10,7 @@ let scissors_div = document.getElementById("scissors");
 let gameCount_span = document.getElementById("game-count-span");
 let gameCounts = gameCount_span.innerHTML;
 gameCounts = 5;
+let msg = "";
 
 
 
@@ -25,24 +26,50 @@ function reset() {
   computerScore = 0;
   playerScore_span.innerHTML = playerScore;
   computerScore_span.innerHTML = computerScore;
-  
+  gameCounts = 5;
+  gameCount_span.innerHTML = gameCounts;
+  result_div.innerHTML = "Make a move";
+}
+
+function winner() {
+
+  switch(true) {
+    case playerScore > computerScore:
+      msg = "Player Won this Game";
+      break;
+    case playerScore < computerScore:
+      msg = "computer Won this Game";
+      break;
+    case playerScore == computerScore:
+      msg = "This game is a tie"
+      break;
+  }
+}
+
+function gameEnd() {
+ 
+    let text = msg;
+    if (confirm(text) == true) {
+      reset();
+    } else {
+      reset();
+    }
 }
 
 function gameCount () {
   
   
-  if(gameCounts > 0) {
+  if(gameCounts > -2) {
     gameCounts -= 1;
     gameCount_span.innerHTML = gameCounts;
     
-  } else if(gameCounts == 0) {
-
-      // run a fxn that resets the game and shows a button
-      
-      reset();
-      gameCounts = 5;
-      result_div.innerHTML = "Make a move";
-  
+    if(gameCounts == 0) {
+      winner()
+    }
+    if(gameCounts == -1) {
+        // run a fxn that resets the game and shows a button
+        gameEnd();
+    }
   }
   
 }                                                    
@@ -51,21 +78,16 @@ function playerWins(player, computer) {
   playerScore++;
   playerScore_span.innerHTML = playerScore;
   result_div.innerHTML = `${player} beats ${computer}. Player Wins!`
-  // gameCount()
-  
-  
 }
 
 function computerWins(player, computer) {
   computerScore++;
   computerScore_span.innerHTML = computerScore;
   result_div.innerHTML = `${computer} beats ${player}. Computer Wins!`
-  // gameCount()
 }
 
 function draw() {
   result_div.innerHTML = "It's a Tie!!!";
-  // gameCount()
 }
 
 
