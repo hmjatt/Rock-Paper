@@ -1,8 +1,8 @@
-# Rock Paper Scissors (console-based)
+# Rock Paper Scissors (Full Game)
 
-[Live Demo](https://hmjatt.github.io/Rock-Paper-Scissors/) * make sure to open console tab in Dev Tools
+[Live Demo](https://hmjatt.github.io/Rock-Paper-Scissors/)
 
-Creating a classic Rock Paper Scissors game based on The Odin Project Assignment. This is the first state of the project, which is only console based. But will be changed to GUI based in the later state. Lets see who wins :v:
+Creating a classic Rock Paper Scissors game based on The Odin Project Assignment. This is the final stage of game, but i might make some changes in future. Lets see who wins :v:
 
 ### Technologies Used 
 
