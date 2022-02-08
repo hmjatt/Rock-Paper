@@ -1,5 +1,9 @@
 # Rock Paper Scissors (Full Game)
 
+
+> ![This is an image](https://raw.githubusercontent.com/hmjatt/Rock-Paper-Scissors/main/icons/rock-paper-scissors-screenshot.jpg)
+
+
 [Live Demo](https://hmjatt.github.io/Rock-Paper-Scissors/)
 
 Creating a classic Rock Paper Scissors game based on The Odin Project Assignment. This is the final stage of game, but i might make some changes in future. Lets see who wins :v:
